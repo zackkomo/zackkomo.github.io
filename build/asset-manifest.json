@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/react-app/static/css/main.8759eab4.chunk.css",
+    "main.js": "/react-app/static/js/main.79522389.chunk.js",
+    "main.js.map": "/react-app/static/js/main.79522389.chunk.js.map",
+    "runtime-main.js": "/react-app/static/js/runtime-main.add4b3ca.js",
+    "runtime-main.js.map": "/react-app/static/js/runtime-main.add4b3ca.js.map",
+    "static/js/2.bd445907.chunk.js": "/react-app/static/js/2.bd445907.chunk.js",
+    "static/js/2.bd445907.chunk.js.map": "/react-app/static/js/2.bd445907.chunk.js.map",
+    "static/js/3.e5bb0b7e.chunk.js": "/react-app/static/js/3.e5bb0b7e.chunk.js",
+    "static/js/3.e5bb0b7e.chunk.js.map": "/react-app/static/js/3.e5bb0b7e.chunk.js.map",
+    "index.html": "/react-app/index.html",
+    "static/css/main.8759eab4.chunk.css.map": "/react-app/static/css/main.8759eab4.chunk.css.map",
+    "static/js/2.bd445907.chunk.js.LICENSE.txt": "/react-app/static/js/2.bd445907.chunk.js.LICENSE.txt",
+    "static/media/EE330ProjectPresentation.0883e4db.pdf": "/react-app/static/media/EE330ProjectPresentation.0883e4db.pdf",
+    "static/media/EE330ProjectReport.1d899ddc.pdf": "/react-app/static/media/EE330ProjectReport.1d899ddc.pdf",
+    "static/media/cpre281Project.e02714e0.jpg": "/react-app/static/media/cpre281Project.e02714e0.jpg",
+    "static/media/discord.3fd85d16.png": "/react-app/static/media/discord.3fd85d16.png",
+    "static/media/me.acc5700e.jpg": "/react-app/static/media/me.acc5700e.jpg",
+    "static/media/tictactoe.51c8f4eb.png": "/react-app/static/media/tictactoe.51c8f4eb.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.add4b3ca.js",
+    "static/js/2.bd445907.chunk.js",
+    "static/css/main.8759eab4.chunk.css",
+    "static/js/main.79522389.chunk.js"
+  ]
+}
