@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/zackkomo.github.io/static/css/main.8759eab4.chunk.css",
+    "main.js": "/zackkomo.github.io/static/js/main.d6073e6f.chunk.js",
+    "main.js.map": "/zackkomo.github.io/static/js/main.d6073e6f.chunk.js.map",
+    "runtime-main.js": "/zackkomo.github.io/static/js/runtime-main.ed072bbf.js",
+    "runtime-main.js.map": "/zackkomo.github.io/static/js/runtime-main.ed072bbf.js.map",
+    "static/js/2.c6c74104.chunk.js": "/zackkomo.github.io/static/js/2.c6c74104.chunk.js",
+    "static/js/2.c6c74104.chunk.js.map": "/zackkomo.github.io/static/js/2.c6c74104.chunk.js.map",
+    "static/js/3.b5cf924d.chunk.js": "/zackkomo.github.io/static/js/3.b5cf924d.chunk.js",
+    "static/js/3.b5cf924d.chunk.js.map": "/zackkomo.github.io/static/js/3.b5cf924d.chunk.js.map",
+    "index.html": "/zackkomo.github.io/index.html",
+    "static/css/main.8759eab4.chunk.css.map": "/zackkomo.github.io/static/css/main.8759eab4.chunk.css.map",
+    "static/js/2.c6c74104.chunk.js.LICENSE.txt": "/zackkomo.github.io/static/js/2.c6c74104.chunk.js.LICENSE.txt",
+    "static/media/EE330ProjectPresentation.0883e4db.pdf": "/zackkomo.github.io/static/media/EE330ProjectPresentation.0883e4db.pdf",
+    "static/media/EE330ProjectReport.1d899ddc.pdf": "/zackkomo.github.io/static/media/EE330ProjectReport.1d899ddc.pdf",
+    "static/media/cpre281Project.e02714e0.jpg": "/zackkomo.github.io/static/media/cpre281Project.e02714e0.jpg",
+    "static/media/discord.3fd85d16.png": "/zackkomo.github.io/static/media/discord.3fd85d16.png",
+    "static/media/me.acc5700e.jpg": "/zackkomo.github.io/static/media/me.acc5700e.jpg",
+    "static/media/tictactoe.51c8f4eb.png": "/zackkomo.github.io/static/media/tictactoe.51c8f4eb.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ed072bbf.js",
+    "static/js/2.c6c74104.chunk.js",
+    "static/css/main.8759eab4.chunk.css",
+    "static/js/main.d6073e6f.chunk.js"
+  ]
+}
