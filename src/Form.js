@@ -2,99 +2,74 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./App.css";
 
-function Form() {
-  /* NEW: Input state handling vvvv */
-  const [inputs, setInputs] = useState({
-    email: "",
-    message: "",
-  });
-  const handleOnChange = (event) => {
-    event.persist();
-    setInputs((prev) => ({
-      ...prev,
-      [event.target.id]: event.target.value,
-    }));
-  };
-  /* End input state handling ^^^^ */
+export default class Form extends React.Component {
+  constructor(props) {
+    super(props);
+    this.submitForm = this.submitForm.bind(this);
+    this.state = {
+      status: "",
+    };
+  }
 
-  // Server state handling
-  const [serverState, setServerState] = useState({
-    submitting: false,
-    status: null,
-  });
-  const handleServerResponse = (ok, msg) => {
-    setServerState({
-      submitting: false,
-      status: { ok, msg },
-    });
-    if (ok) {
-      setInputs({
-        email: "",
-        message: "",
-      });
-    }
-  };
-  const handleOnSubmit = (event) => {
-    event.preventDefault();
-    setServerState({ submitting: true });
-    axios({
-      method: "POST",
-      url: "https://formspree.io/f/xpzyeeay",
-      data: inputs,
-    })
-      .then((r) => {
-        handleServerResponse(true, "Thanks!");
-      })
-      .catch((r) => {
-        handleServerResponse(false, r.response.data.error);
-      });
-  };
-
-  return (
-    <section className="container-content">
-      <h1>Contact Us</h1>
-      <form className="contact-form" onSubmit={handleOnSubmit}>
-        <label className="contact-form-el" htmlFor="email">
-          Email:
-        </label>
-        <br></br>
-        <input
-          id="email"
-          type="email"
-          name="email"
-          required
-          onChange={handleOnChange}
-          value={inputs.email}
-          className="contact-email"
-        />
-        <br></br>
-        <label className="contact-form-el" htmlFor="message">
-          Message:
-        </label>
-        <br></br>
-
-        <textarea
-          className="contact-text"
-          id="message"
-          name="message"
-          onChange={handleOnChange}
-          value={inputs.message}
-        ></textarea>
-        <button
-          className="contact-form-button"
-          type="submit"
-          disabled={serverState.submitting}
+  render() {
+    const { status } = this.state;
+    return (
+      <section className="container-content">
+        <h1>Contact Us</h1>
+        <form
+          className="contact-form"
+          onSubmit={this.submitForm}
+          action="https://formspree.io/f/xpzyeeay"
+          method="POST"
         >
-          Submit
-        </button>
-        {serverState.status && (
-          <p className={!serverState.status.ok ? "errorMsg" : ""}>
-            {serverState.status.msg}
-          </p>
-        )}
-      </form>
-    </section>
-  );
-}
+          <label className="contact-form-el" htmlFor="email">
+            Email:
+          </label>
+          <br></br>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            required
+            className="contact-email"
+          />
+          <br></br>
+          <label className="contact-form-el" htmlFor="message">
+            Message:
+          </label>
+          <br></br>
 
-export default Form;
+          <textarea
+            className="contact-text"
+            id="message"
+            name="message"
+          ></textarea>
+          <button className="contact-form-button" type="submit">
+            Submit
+          </button>
+          {status === "SUCCESS" ? <p>Thanks!</p> : <button>Submit</button>}
+          {status === "ERROR" && <p>Ooops! There was an error.</p>}
+        </form>
+      </section>
+    );
+  }
+
+  submitForm(ev) {
+    ev.preventDefault();
+    const form = ev.target;
+    const data = new FormData(form);
+    const xhr = new XMLHttpRequest();
+    xhr.open(form.method, form.action);
+    xhr.setRequestHeader("Accept", "application/json");
+    xhr.onreadystatechange = () => {
+      if (xhr.readyState !== XMLHttpRequest.DONE) return;
+      if (xhr.status === 200) {
+        form.reset();
+        this.setState({ status: "SUCCESS" });
+      } else {
+        this.setState({ status: "ERROR" });
+      }
+    };
+    xhr.send(data);
+  }
+}
