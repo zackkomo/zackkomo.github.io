@@ -39,7 +39,7 @@ function Form() {
     setServerState({ submitting: true });
     axios({
       method: "POST",
-      url: "https://formspree.io/f/{form_id}",
+      url: "https://formspree.io/f/xpzyeeay",
       data: inputs,
     })
       .then((r) => {
