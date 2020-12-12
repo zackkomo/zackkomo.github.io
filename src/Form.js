@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import axios from "axios";
+import React from "react";
 import "./App.css";
 
 export default class Form extends React.Component {
@@ -44,10 +43,14 @@ export default class Form extends React.Component {
             id="message"
             name="message"
           ></textarea>
-          <button className="contact-form-button" type="submit">
-            Submit
-          </button>
-          {status === "SUCCESS" ? <p>Thanks!</p> : <button>Submit</button>}
+
+          {status === "SUCCESS" ? (
+            <p>Thanks!</p>
+          ) : (
+            <button className="contact-form-button" type="submit">
+              Submit
+            </button>
+          )}
           {status === "ERROR" && <p>Ooops! There was an error.</p>}
         </form>
       </section>

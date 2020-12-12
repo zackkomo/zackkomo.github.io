@@ -83,7 +83,7 @@ function ImgRen(props) {
       </div>
     );
   }
-  return <img className="project" src={props.name} alt="Oops" />;
+  return <img className="picture-container" src={props.name} alt="Oops" />;
 }
 
 export default Projects;
