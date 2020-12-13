@@ -1,40 +1,13 @@
 .App {
   min-height: 100vh;
   width: 100%;
-  background-color: rgb(68, 121, 139);
+  background-color: #256e5e;
   margin: 0;
   padding: 0;
 }
 
-nav {
-  display: flex;
-  align-items: center;
-  height: 5vh;
-  width: 100%;
-  background: rgb(4, 67, 87);
-  color: white;
-}
-nav h1,
-.Nav-link,
-.Nav-link Link,
-.Nav-link h1,
-.Nav-link h5 {
-  width: fit-content;
-  color: white;
-  text-decoration: none;
-  margin: 0 5px;
-  white-space: nowrap;
-}
-
-.nav-links {
-  width: 50%;
-  display: inline-flex;
-  align-items: center;
-  list-style: none;
-}
-
 section.container {
-  background-color: rgb(134, 180, 248);
+  background-color: #a6a3b6;
   min-height: 70vh;
   max-height: fit-content;
   width: 80vw;
@@ -56,18 +29,6 @@ section.container-content h1 {
   margin: 0;
   padding: 0;
   text-align: center;
-}
-
-.homepage {
-  min-width: 100vw;
-  min-height: 94vh;
-  position: relative;
-  overflow: hidden;
-}
-.homepage h1 {
-  text-align: center;
-  margin-top: 40vh;
-  color: white;
 }
 
 .photo {
