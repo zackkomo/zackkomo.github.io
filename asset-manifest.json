@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/zackkomo.github.io/static/css/main.db04c728.chunk.css",
-    "main.js": "/zackkomo.github.io/static/js/main.d243df90.chunk.js",
-    "main.js.map": "/zackkomo.github.io/static/js/main.d243df90.chunk.js.map",
+    "main.css": "/zackkomo.github.io/static/css/main.61bfde1c.chunk.css",
+    "main.js": "/zackkomo.github.io/static/js/main.07b021d9.chunk.js",
+    "main.js.map": "/zackkomo.github.io/static/js/main.07b021d9.chunk.js.map",
     "runtime-main.js": "/zackkomo.github.io/static/js/runtime-main.856189de.js",
     "runtime-main.js.map": "/zackkomo.github.io/static/js/runtime-main.856189de.js.map",
     "static/js/2.52f4090b.chunk.js": "/zackkomo.github.io/static/js/2.52f4090b.chunk.js",
@@ -10,20 +10,20 @@
     "static/js/3.d56959a2.chunk.js": "/zackkomo.github.io/static/js/3.d56959a2.chunk.js",
     "static/js/3.d56959a2.chunk.js.map": "/zackkomo.github.io/static/js/3.d56959a2.chunk.js.map",
     "index.html": "/zackkomo.github.io/index.html",
-    "static/css/main.db04c728.chunk.css.map": "/zackkomo.github.io/static/css/main.db04c728.chunk.css.map",
+    "static/css/main.61bfde1c.chunk.css.map": "/zackkomo.github.io/static/css/main.61bfde1c.chunk.css.map",
     "static/js/2.52f4090b.chunk.js.LICENSE.txt": "/zackkomo.github.io/static/js/2.52f4090b.chunk.js.LICENSE.txt",
     "static/media/EE330ProjectPresentation.0883e4db.pdf": "/zackkomo.github.io/static/media/EE330ProjectPresentation.0883e4db.pdf",
     "static/media/EE330ProjectReport.1d899ddc.pdf": "/zackkomo.github.io/static/media/EE330ProjectReport.1d899ddc.pdf",
     "static/media/cpre281Project.e02714e0.jpg": "/zackkomo.github.io/static/media/cpre281Project.e02714e0.jpg",
     "static/media/discord.3fd85d16.png": "/zackkomo.github.io/static/media/discord.3fd85d16.png",
-    "static/media/homebackground.7ddbe64b.jpg": "/zackkomo.github.io/static/media/homebackground.7ddbe64b.jpg",
+    "static/media/App.css": "/zackkomo.github.io/static/media/homebackground.7ddbe64b.jpg",
     "static/media/me.acc5700e.jpg": "/zackkomo.github.io/static/media/me.acc5700e.jpg",
     "static/media/tictactoe.51c8f4eb.png": "/zackkomo.github.io/static/media/tictactoe.51c8f4eb.png"
   },
   "entrypoints": [
     "static/js/runtime-main.856189de.js",
     "static/js/2.52f4090b.chunk.js",
-    "static/css/main.db04c728.chunk.css",
-    "static/js/main.d243df90.chunk.js"
+    "static/css/main.61bfde1c.chunk.css",
+    "static/js/main.07b021d9.chunk.js"
   ]
 }
